@@ -1,0 +1,52 @@
+.cardprojet {
+    margin-left: 5rem;
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.nomprojet {
+    position: relative;
+    margin-left: 7rem;
+}
+
+.descriptionprojet {
+   margin-left: 1rem;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.imgprojet {
+    margin-top: 2rem;
+    height: 200px;
+    width: 400px;
+}
+
+.btnprojet {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 9rem;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: red;
+
+}
+
+.btnprojet2 {
+    position: relative;
+}
+
+
+.btnprojet:hover {
+    transition: all 0.2s;
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.btnp{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
