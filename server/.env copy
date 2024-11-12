@@ -1,0 +1,4 @@
+DB_USER =
+DB_PASSWORD =
+DB_NAME =projet
+DB_PORT =3306

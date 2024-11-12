@@ -1,24 +1,27 @@
 import './styles/CardProjet.css'
 import CAPY from './assets/capy.jpg'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function CardProjet() {
+function CardProjet({projet}) {
     return (
         <>
             <div className='cardprojet'>
                 <div>
-                    <h2 className='nomprojet'>Nom du projet</h2>
-                    <p className='descriptionprojet'> descritpion du projet  en bref je le dit en bref sans trop abuser ceci est un test pour  voir si je peux mettre un texte en bref sans trop abuser</p>
+                    <h2 className='nomprojet'>{projet.nom}</h2>
                     <img className='imgprojet' src={CAPY} alt="" srcset="" />
-                    <NavLink
-                        to="/about"
+                    <p className='descriptionprojet'> {projet.description}</p>
+                    <Link
+                        to={projet.lien}
                         className="btnprojet"
                     >
-                        <div className="btnprojet2">
-                            <p className='btnp'>tout sur moi</p>
-
-                        </div>
-                    </NavLink>
+                            voir le site
+                    </Link>
+                    <Link
+                        to={projet.github}
+                        className="btnprojet"
+                    >
+                            voir le github
+                    </Link>
                 </div>
 
             </div>
