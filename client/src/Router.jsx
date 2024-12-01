@@ -1,11 +1,11 @@
 import { createBrowserRouter, useLoaderData } from "react-router-dom";
 import App from "./App";
-import Contact from "./Pages/Contact";
-import Accueil from "./Pages/Accueil";
+import Contact from "./pages/Contact";
+import Accueil from "./pages/Accueil";
 import TextHome from "./TextHome";
 import ButtonNav from "./ButtonNav";
-import Projet from "./Pages/Projet";
-
+import Projet from "./pages/Projet";
+import Login from "./pages/login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,17 +31,27 @@ const router = createBrowserRouter([
     )
   },
   {
+    path: "login",
+    element: (
+      <>
+
+        <Login/>
+        <App />,
+      </>
+    )
+  },
+  {
     path: "Projet",
     loader: async () => fetch("http://localhost:3000/api/projet"),
-    element:   (
-<>
-<Projet/>
-<App/>
+    element: (
+      <>
+        <Projet />
+        <App />
 
       </>
     )
   },
- 
+
 ]);
 
 export default router;
