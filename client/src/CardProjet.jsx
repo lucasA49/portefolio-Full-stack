@@ -8,7 +8,7 @@ function CardProjet({projet}) {
             <div className='cardprojet'>
                 <div>
                     <h2 className='nomprojet'>{projet.nom}</h2>
-                    <img className='imgprojet' src={CAPY} alt="" srcset="" />
+                    <img className='imgprojet' src={projet.image} alt="" srcset="" />
                     <p className='descriptionprojet'> {projet.description}</p>
                     <Link
                         to={projet.lien}

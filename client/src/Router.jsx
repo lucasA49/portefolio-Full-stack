@@ -5,7 +5,8 @@ import Accueil from "./pages/Accueil";
 import TextHome from "./TextHome";
 import ButtonNav from "./ButtonNav";
 import Projet from "./pages/Projet";
-import Login from "./pages/login";
+import Login from "./Login";
+import Infomoi from "./Infomoi";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,19 @@ const router = createBrowserRouter([
         <Accueil />,
         <App />
         <TextHome />
+      </>
+    )
+  },
+  {
+    path: "about",
+    errorElement: <h1>Page non trouvée</h1>,
+    element: (
+
+      <>
+        <ButtonNav />
+        <App />
+        <Infomoi/>
+ 
       </>
     )
   },
@@ -51,6 +65,7 @@ const router = createBrowserRouter([
       </>
     )
   },
+
 
 ]);
 

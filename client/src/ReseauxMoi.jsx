@@ -5,7 +5,7 @@ import cv from "./assets/cv.png";
 import tel from "./assets/telephone.jpg";
 
 function ReseauxMoi() {
-  const pdfFile = "./assets/cv.pdf";
+  const pdfFile = "cv.pdf";
   return (
     <div className="conteneur-reseaux">
       <div className="">        
