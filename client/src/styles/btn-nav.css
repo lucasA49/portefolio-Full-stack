@@ -1,8 +1,6 @@
 .section-btn {
     display: flex;
     gap: 120px;
-    margin-top: 10px;
-    margin-bottom: 70px;
     max-width: 70%;
     justify-content: center;
     align-items: center;

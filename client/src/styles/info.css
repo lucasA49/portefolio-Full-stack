@@ -1,0 +1,29 @@
+.containermoi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .infomoi {
+    margin-top: 5rem;
+    background-color: aliceblue;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px; /* Ajoute un espace autour du contenu */
+  }
+  .h1moi{
+  display: flex;
+      justify-content: center;  
+     align-items: center;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .infomoi {
+      background-color: aliceblue;
+      width: 70%;
+      border-radius: 10px;
+      padding: 20px; /* Ajoute un espace autour du contenu */
+      margin-top: 1.5rem;
+    }
+    }
+  

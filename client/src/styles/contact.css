@@ -1,12 +1,18 @@
 .conteneur-contact {
+  align-items: center;
+  justify-content: flex-end;
   display: flex;
   margin-left: 8rem;
 }
 
 .formul {
-  position: relative;
-  margin-right: 17rem;
-  width: 400px;
+ display: flex;
+  justify-content: center;
+margin-top: 3rem;
+  width: 380px;
+  padding: 15px;
+  margin-bottom: 2rem;
+
 }
 
 form {
@@ -19,7 +25,7 @@ form {
 }
 
 form div {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 label {
@@ -45,8 +51,7 @@ textarea {
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 10px;
+  width: 75%;
   background-color: #007bff;
   border: none;
   border-radius: 4px;
@@ -60,5 +65,6 @@ button[type="submit"]:hover {
   letter-spacing: 3px;
   border-radius: 10px;
   transition: 0.8s;
+  width: 100%;
   transition-delay: 0s;
 }
